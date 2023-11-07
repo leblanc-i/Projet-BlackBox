@@ -1,0 +1,470 @@
+/* Configuration global */
+.pad0 {
+  padding: 0 !important;
+}
+p {
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-bottom: 4rem;
+  margin-top: 0;
+}
+h5 {
+  font-weight: 500;
+}
+.container {
+  min-width: 100% !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+}
+.link-nav a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 350;
+}
+.link-nav li {
+  padding-bottom: 1.1rem;
+}
+.btn {
+  width: 200px;
+  height: 40px;
+  background: darkred;
+}
+.info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+}
+.info p {
+  padding: 0 0 0 60px;
+  margin: 0;
+  font-size: 14px;
+  color: #484848;
+}
+.row {
+  margin: 0;
+}
+.sidenav-trigger {
+  color: orangered;
+}
+.section-title h3 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 15px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+.section-title h3::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+.section-title p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
+input {
+  bottom: solid black !important;
+}
+
+/* Header */
+nav ul a {
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+nav ul a:hover {
+  color: orangered;
+  text-transform: uppercase;
+  transform: scale(1.2);
+}
+nav .brand-logo {
+  margin-top: -2.1rem;
+}
+nav .brand-logo span {
+  font-size: 7rem;
+  color: orangered;
+}
+.navbar {
+  background: black;
+}
+.navbar-fixed {
+  height: 10vh;
+  background: rgb(56, 4, 4);
+}
+.social {
+  display: flex;
+}
+#index-banner {
+  padding-top: 10vh;
+  min-height: 90vh;
+  background: url("/images/img/img-header.jpg") fixed center/cover;
+}
+#index-banner .container {
+  margin: 10vh 0;
+}
+#index-banner h1 {
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  transform: translateX(-300px);
+  opacity: 0;
+  animation: h1Anim 1.5s ease-in-out forwards;
+}
+#index-banner span {
+  background: red;
+  border-radius: 15px 0 15px 0;
+  color: black;
+  text-transform: uppercase;
+}
+#index-banner h5 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-weight: 400;
+  transform: translateY(500px);
+  opacity: 0;
+  animation: h5Anim 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 74vh;
+  opacity: 0;
+  transform:translateX(-50%);
+  bottom: 5px;
+  animation: arrowAnim 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+#propos {
+  padding-top: 10vh;
+}
+#services {
+  padding-top: 10vh;
+  background: #151515; 
+}
+#services .section-title {
+  padding-bottom: 1.5rem;
+}
+#services .section-title p {
+  color: aliceblue;
+}
+#reservation {
+  padding-top: 10vh;
+}
+#reservation .section-title{
+  padding-bottom: 3rem;
+}
+#contact {
+  padding-top: 10vh;
+}
+#contact .section-title{
+  padding-bottom: 3rem;
+}
+.img-propos {
+  width: 100%;
+  height: 30rem;
+  background: url("/images/img/img-propos1.jpg") center/cover;
+}
+.img-propos-2 {
+  width: 100%;
+  height: 30rem;
+  background: url("/images/img/img-propos2.jpg") center/cover;
+}
+.img-presentation {
+  background: url("/images/img/img-bacg.jpg") fixed center/cover;
+}
+.img-presentation img {
+  width: 100%;
+  min-height: 80vh;
+  padding: 30px 15px;
+}
+.card {
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.card-2, .card-4, .card-6 {
+  grid-template-columns: 70% 30% !important;
+}
+.card .img1 img {
+  width: 100%;
+  height: 100%;}
+.card .img2 img {
+  width: 100%;
+  height: 100%;
+}
+.card .img3 img {
+  width: 100%;
+  height: 100%;}
+.card .img4 img {
+  width: 100%;
+  height: 100%;}
+.card .img5 img {
+  width: 100%;
+  height: 100%;}
+.card .img6 img{
+  width: 100%;
+  height: 100%;}
+.card .img7 img {
+  width: 100%;
+  height: 100%;}
+.card-text {
+  overflow: scroll;
+  text-align: center;
+  padding: 0 20px;
+}
+.img-reservation img {
+  width: 100%;
+  height: 100%;
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+#parallax1 {
+  background: url("/images/img/img-13.jpg") fixed center/cover;
+}
+#parallax2 {
+  background: url("/images/img/img-para-2.jpg") fixed center/cover;
+}
+footer {
+  background: black;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+.footer-top {
+  background: #151515;
+  border-bottom: 1px solid #222222;
+  padding: 20px 0 30px 0;
+}
+.footer-info {
+  padding-left: 20% !important;
+}
+.footer-info h3 {
+  font-size: 28px;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 100;
+}
+.footer-info strong {
+  font-weight: bold;
+}
+.link-nav {
+  padding-left: 20% !important;
+}
+.link-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link-nav ul li:first-child {
+  padding-top: 0;
+}
+.link-nav ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.link-nav ul i {
+  padding-right: 2px;
+  color: #ffc451;
+  font-size: 18px;
+  line-height: 1;
+}
+.link-nav ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+.footer-copyright {
+  background: black !important;
+}
+
+/* Animations */
+.textProposAnim {
+  transform: translateX(-300px);
+  opacity: 0;
+  animation: textProposAnim 1s ease-in-out forwards;
+}
+.imgProposAnim {
+  transform: translateX(300px);
+  opacity: 0;
+  animation: textProposAnim 1s ease-in-out forwards;
+}
+.parcoursProposAnim {
+  transform: translateY(250px);
+  opacity: 0;
+  animation: parcoursProposAnim 1s ease-in-out forwards;
+
+}
+.imgPropos2Anim {
+  transform: translateX(-300px);
+  opacity: 0;
+  animation: textProposAnim 1s ease-in-out forwards;
+}
+.textPropos2Anim {
+  transform: translateX(300px);
+  opacity: 0;
+  animation: textProposAnim 1s ease-in-out forwards;
+}
+.textChoisirAnim {
+  transform: translateY(250px);
+  opacity: 0;
+  animation: parcoursProposAnim 1s ease-in-out forwards;
+}
+/* header animation */
+@keyframes arrowAnim {
+  to {
+    top: 78vh;
+    opacity: 1;
+  } 
+}
+@keyframes h1Anim {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  } 
+}
+@keyframes h5Anim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  } 
+}
+/* Fin header animation */
+
+/* Propos animation */
+@keyframes textProposAnim {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes imgProposAnim {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes parcoursProposAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Fin Propos animation */
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+@media only screen and (max-width : 800px) {
+  #propos h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  #propos p {
+    font-size: 1.3rem;
+  }
+  
+  #presentation h2 {
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  #presentation h5 {
+    font-size: 1.5rem;
+    padding-bottom: 0 !important;
+  }
+  #presentation p {
+    font-size: 1.3rem;
+  }
+  #reservation h2 {
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  #reservation h5 {
+    font-size: 1.5rem;
+    padding-bottom: 0 !important;
+  }
+  #reservation p {
+    font-size: 1.3rem;
+  }
+  #contact h4, .local {
+    padding: 0 0 0 40px !important;
+    flex-wrap: wrap;
+  }
+  #contact p {
+    font-size: 1.3rem;
+  }
+  #contact .info {
+    padding-right: 20px !important;
+  }
+  .footer-info h3 {
+    font-size: 25px;
+  }
+  .link-nav h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .text-propos {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width : 400px) {
+  #index-banner h1 {
+    font-size: 3.8rem;
+  }
+  #index-banner h5 {
+    font-size: 1.8rem;
+  }
+}
+
