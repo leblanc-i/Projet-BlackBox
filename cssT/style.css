@@ -1,6 +1,25 @@
 /* Configuration global */
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
 .pad0 {
   padding: 0 !important;
+}
+.row {
+  padding: 2rem 0;
+}
+.social-links i {
+  font-size: 1.5rem;
+  margin: 1rem 1rem 1rem 0;
+  padding: 0.5rem;
+  background: rgb(41, 39, 39);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.social-links i:hover {
+  transform: scale(1.1);
+  color: white !important;
 }
 p {
   line-height: 2rem;
@@ -25,6 +44,10 @@ h5 {
   color: white;
   font-size: 1rem;
   font-weight: 350;
+}
+.link-nav a:hover {
+  color: #ffc451;
+  transform: scale(1.1);
 }
 .link-nav li {
   padding-bottom: 1.1rem;
@@ -69,7 +92,7 @@ h5 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ffde9e;
+  background: red;
   margin: 4px 10px;
 }
 .section-title p {
@@ -95,9 +118,7 @@ nav ul a:hover {
   text-transform: uppercase;
   transform: scale(1.2);
 }
-nav .brand-logo {
-  margin-top: -2.1rem;
-}
+
 nav .brand-logo span {
   font-size: 7rem;
   color: orangered;
@@ -159,6 +180,18 @@ nav .brand-logo span {
 #propos {
   padding-top: 10vh;
 }
+.text-propos {
+  font-style: italic;
+}
+.text-propos-2 {
+  font-style: italic;
+}
+.text-presentation {
+  font-style: italic;
+}
+.text-reservation {
+  font-style: italic;
+}
 #services {
   padding-top: 10vh;
   background: #151515; 
@@ -182,21 +215,23 @@ nav .brand-logo span {
   padding-bottom: 3rem;
 }
 .img-propos {
+  box-shadow: -1px 0px 12px 1px black;
   width: 100%;
   height: 30rem;
   background: url("/images/img/img-propos1.jpg") center/cover;
 }
 .img-propos-2 {
+  box-shadow: -1px 0px 12px 1px black;
   width: 100%;
   height: 30rem;
   background: url("/images/img/img-propos2.jpg") center/cover;
 }
 .img-presentation {
-  background: url("/images/img/img-bacg.jpg") fixed center/cover;
+  background: url("/images/img/img-bacg.jpg") center/cover;
 }
 .img-presentation img {
   width: 100%;
-  min-height: 80vh;
+  height: 90vh;
   padding: 30px 15px;
 }
 .card {
@@ -235,6 +270,7 @@ nav .brand-logo span {
   padding: 0 20px;
 }
 .img-reservation img {
+  box-shadow: -1px 0px 12px 1px black;
   width: 100%;
   height: 100%;
 }
@@ -317,37 +353,27 @@ footer {
 }
 
 /* Animations */
-.textProposAnim {
+.gDAnim {
   transform: translateX(-300px);
   opacity: 0;
-  animation: textProposAnim 1s ease-in-out forwards;
+  animation: gDAnim 1s ease-in-out forwards;
 }
-.imgProposAnim {
+.dGAnim {
   transform: translateX(300px);
   opacity: 0;
-  animation: textProposAnim 1s ease-in-out forwards;
+  animation: dGAnim 1s ease-in-out forwards;
 }
-.parcoursProposAnim {
+.bHAnim {
   transform: translateY(250px);
   opacity: 0;
-  animation: parcoursProposAnim 1s ease-in-out forwards;
+  animation: bHAnim 1s ease-in-out forwards;
+}
+.aVAnim {
+  transform: scale(0);
+  opacity: 0;
+  animation: aVAnim 1s ease-in-out forwards;
+}
 
-}
-.imgPropos2Anim {
-  transform: translateX(-300px);
-  opacity: 0;
-  animation: textProposAnim 1s ease-in-out forwards;
-}
-.textPropos2Anim {
-  transform: translateX(300px);
-  opacity: 0;
-  animation: textProposAnim 1s ease-in-out forwards;
-}
-.textChoisirAnim {
-  transform: translateY(250px);
-  opacity: 0;
-  animation: parcoursProposAnim 1s ease-in-out forwards;
-}
 /* header animation */
 @keyframes arrowAnim {
   to {
@@ -369,26 +395,32 @@ footer {
 }
 /* Fin header animation */
 
-/* Propos animation */
-@keyframes textProposAnim {
+/* Animation */
+@keyframes gDAnim {
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes imgProposAnim {
+@keyframes dGAnim {
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes parcoursProposAnim {
+@keyframes bHAnim {
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-/* Fin Propos animation */
+@keyframes aVAnim {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Fin Animation */
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
