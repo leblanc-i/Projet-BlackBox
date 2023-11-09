@@ -14,12 +14,13 @@ body {
   margin: 1rem 1rem 1rem 0;
   padding: 0.5rem;
   background: rgb(41, 39, 39);
+  color: white;
   border-radius: 3px;
   transition: 0.3s;
 }
 .social-links i:hover {
   transform: scale(1.1);
-  color: white !important;
+  background: darkred;
 }
 p {
   line-height: 2rem;
@@ -40,13 +41,20 @@ h5 {
   padding-right: 5%;
   margin: auto;
 }
+.brand-logo img {
+  width: 40px;
+  height: 30px;
+  margin-bottom: -3px;
+  border-radius: 2px;
+}
 .link-nav a {
   color: white;
   font-size: 1rem;
   font-weight: 350;
+  padding: 4px;
 }
 .link-nav a:hover {
-  color: #ffc451;
+  background: darkred;
   transform: scale(1.1);
 }
 .link-nav li {
@@ -113,16 +121,15 @@ nav ul a {
   text-transform: uppercase;
   transition: 0.3s;
 }
+nav ul a:focus-within {
+  color: orangered;
+}
 nav ul a:hover {
   color: orangered;
   text-transform: uppercase;
   transform: scale(1.2);
 }
 
-nav .brand-logo span {
-  font-size: 7rem;
-  color: orangered;
-}
 .navbar {
   background: black;
 }
@@ -132,6 +139,9 @@ nav .brand-logo span {
 }
 .social {
   display: flex;
+}
+.sidenav-overlay {
+  z-index: 0;
 }
 #index-banner {
   padding-top: 10vh;
@@ -225,9 +235,6 @@ nav .brand-logo span {
   width: 100%;
   height: 30rem;
   background: url("/images/img/img-propos2.jpg") center/cover;
-}
-.img-presentation {
-  background: url("/images/img/img-bacg.jpg") center/cover;
 }
 .img-presentation img {
   width: 100%;
